@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% include 'parts/header_text.html' %}
+{% include 'parts/about_project.html' %}
+{% include 'parts/help_to_grow.html' %}
+{% include 'parts/work_process.html' %}
+<section class="section colored" id="pricing-plans">
+    <div class="container">
+        <!-- ***** Section Title Start ***** -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="center-heading">
+                    <h2 class="section-title">Pricing Plans</h2>
+                </div>
+            </div>
+            <div class="offset-lg-3 col-lg-6">
+                <div class="center-text">
+                    <p>Not sure which plan to choose? This breakdown should help you select the one just right for
+                        you</p>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Section Title End ***** -->
+
+        <div class="row">
+            <!-- ***** Pricing Item Start ***** -->
+<!--            {% for price in plans %}-->
+            <div class="col-lg-4 col-md-6 col-sm-12"
+                 data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+
+                <div class="pricing-item">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title"></h3>
+                    </div>
+                    <div class="pricing-body">
+                        <div class="price-wrapper">
+                            <span class="currency">$</span>
+                            <span class="price"></span>
+                            <span class="period">monthly</span>
+                        </div>
+                        <ul class="list">
+                            <li class="active">Junior accounts: </li>
+                            <li class="active">Dally interest on savigs: %</li>
+                            <li class="active">Exchange fees: %</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#" class="main-button">Purchase Now</a>
+                    </div>
+                </div>
+            </div>
+<!--            {% endfor %}-->
+        </div>
+    </div>
+</section>
+{% include 'parts/blog_home.html' %}
+
+{% endblock content%}
